@@ -6,6 +6,51 @@
   box-sizing: border-box;
 }
 
+.container {
+    max-width: 1158px;
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  ul {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .contact-list {
+    display: flex;
+    gap: 20px;
+  }
+  .hero_section {
+    padding: 188px 0;
+  }
+  .hero_title {
+    max-width: 496px;
+    margin: 0 auto; /* Ortalamayı sağlamak için */
+  }
+  .hero_button {
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    background-color: #4d5ae5;
+    border-radius: 4px;
+cursor: pointer;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  
+ 
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -99,7 +144,7 @@ a {
 }
 
 /* Hero */
-.hero {
+.hero_section {
   background-color: #2e2f42;
   color: #ffffff;
   text-align: center;
@@ -113,7 +158,7 @@ a {
   justify-content: center; /* Dikeyde ortalama */
 }
 
-.hero h1 {
+.hero_title{
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 56px;
@@ -124,7 +169,7 @@ a {
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.hero-button {
+.hero_button {
   background-color: #4d5ae5;
   color: #ffffff;
   border: none;
@@ -140,11 +185,26 @@ a {
   height: 56px;
 }
 
-.hero-button:hover {
+.hero_button:hover {
   background-color: #3c49c0;
 }
 /* Features */
-.features-list {
+.features_section {
+    padding: 120px 0;
+  }
+  .features_list {
+    display: flex;
+    gap: 24px; /* öğeler arasındaki boşluk */
+  }
+  .feature_item {
+    width: calc((100% - 72px) / 4); /* Alternatif olarak flex-basis kullanılabilir */
+    flex-basis: calc((100% - 72px) / 4); 
+}
+.feature_title {
+    margin-bottom: 8px;
+  }
+  
+.features_list {
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
@@ -152,7 +212,7 @@ a {
   justify-content: center; /* Dikeyde ortalama */
 }
 
-.features-list li {
+.features_list li {
   width: 18%;
   font-family: var(--font-family);
   font-weight: 400;
@@ -163,37 +223,75 @@ a {
 }
 
 /* Team */
-.team {
+.team_section {
   text-align: center; /* Başlığı ve içeriği ortalar */
   margin-top: 150px;
 }
-
-.team-list {
+.team_section {
+    padding: 120px 0;
+  }
+  .team_title {
+    margin-bottom: 72px;
+  }
+  
+.team_list {
   display: flex;
   justify-content: space-between;
   align-items: center; /* Yatayda ortalama */
   justify-content: center; /* Dikeyde ortalama */
   margin-top: 50px;
-  gap: 90px;
+  gap: 24px;
 }
-.team-list li img {
+.team_list li img {
   margin-bottom: 15px; /* Resimlerin altına 15px boşluk ekler */
   margin-top: 50px;
 }
+.team_member {
+    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  .team_member:first-child {
+    border-radius: 0px 0px 4px 4px;
+  }
+  .team_member_info {
+    padding: 32px 0;
+  }
+  .member_name {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .member_title {
+    text-align: center;
+  }
+  
+  
 
-.team-list li h3,
-.portfolio-list li p {
+.team_list li h3,
+.portfolio_list li p {
   /* Alt açıklama */
   margin-top: 10px; /* Başlık ve alt yazı arasındaki boşluğu artırır */
   margin-bottom: 10px;
   /* Portfolio */
 }
-.portfolio {
+.portfolio_section {
   text-align: center; /* Başlığı ortalar */
   margin-top: 150px;
 }
+.portfolio_section {
+    padding: 120px 0;
+  }
+  .portfolio_title {
+    margin-bottom: 72px;
+  }
+  
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
 
-.portfolio-list {
+.portfolio_list {
   display: flex;
   flex-wrap: wrap;
   align-items: center; /* Yatayda ortalama */
@@ -202,24 +300,26 @@ a {
   margin-top: 50px;
 }
 
-.portfolio-list li {
+.portfolio_list li {
   width: calc(33.33% - 156px);
   text-align: left;
   margin: 0 5px;
 }
 
-.portfolio-list li img {
+
+.portfolio_list li img {
   margin-bottom: 15px; /* Resimlerin altına 15px boşluk ekler */
   margin-top: 50px;
 }
 
-.portfolio-list li h3,
-.portfolio-list li p {
+
+.portfolio_list li h3,
+.portfolio_list li p {
   /* Alt açıklama */
   margin-top: 10px; /* Başlık ve alt yazı arasındaki boşluğu artırır */
   margin-bottom: 10px;
 }
-h2 {
+.portfolio_title {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 36px;
@@ -228,6 +328,31 @@ h2 {
   text-align: center;
   color: var(--navy-blue);
 }
+.portfolio_list {
+    display: flex;
+    flex-wrap: wrap;  
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.portfolio_item {
+    width: calc((100% - 72px) / 4);
+  }
+  .portfolio_item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  .portfolio_info {
+    padding: 32px 16px;
+  }
+  .portfolio_info {
+    border: 1px solid #e7e9fc;
+  }
+  .portfolio_info {
+    border-top: none;
+  }
+  .portfolio_info {
+    margin-bottom: 8px;
+  }
+  
 /* Footer */
 .footer {
   background-color: #2e2f42;
