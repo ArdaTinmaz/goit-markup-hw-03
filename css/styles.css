@@ -1,264 +1,266 @@
 /* Genel Ayarlar */
 /* Tarayıcı Varsayılan Stillerini Sıfırlama */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #434455;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html, body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden; /* Yatay kaydırmayı kaldırır */
-  }
-  
-  
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .header, .hero, .footer {
-    max-width: 100%; /* Sabit genişliği kaldırır */
-    width: 100%;
-    margin: 0 auto; /* Ortalamayı sağlar */
-  }
-  
-  /* Header */
-  .header {
-    background-color: #ffffff; /* Arka plan beyaz */
-    color: #434455;
-    padding: 10px 0;
-    border-bottom: 1px solid #e0e0e0; /* İnce bir alt çizgi */
-    width: 1440px;
-    height: 72px;
-  
-  }
-  
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1440px; /* İçerik genişliği */
-    margin: 0 auto; /* Ortalamak için */
-    padding: 0 20px; /* Yanlardan boşluk */
-    margin-top: 15px;
-  }
-  
-  .nav-list {
-    display: flex;
-    gap: 30px;
-    font-weight: 600;
-    margin-right: 0; /* Sağdaki boşluğu kaldırdık */
-  
-  }
-  
-  .nav-list li a {
-    font-size: 16px;
-    font-weight: 600; /* Menü yazılarını daha belirgin hale getirdim */
-  }
-  .nav-list li a:hover{
-    color: #3c49c0;
-  }
-  .header-logo {
-    font-family: Raleway, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: #4d5ae5; /* "WEB" kısmının rengi */
-  }
-  
-  .header-logo span {
-    color: #2e2f42; /* "STUDIO" kısmının rengi */
-  }
-  
-  .contact-info {
-    display: flex;
-    gap: 20px;
-    font-size: 14px;
-    color: #434455;
-    
-  }
-  .contact-info a:hover{
-    color:#3c49c0;
-  }
-  
-  /* Hero */
-  .hero {
-    background-color: #2e2f42;
-    color: #ffffff;
-    text-align: center;
-    padding: 100px 0;
-    width: 100%;
-    height: 600px;
-    padding: 100px 0;
-    display: flex; /* Flexbox kullanımı */
-    flex-direction: column; /* Elemanları dikey hizala */
-    align-items: center; /* Yatayda ortalama */
-    justify-content: center; /* Dikeyde ortalama */
-  }
-  
-  .hero h1 {
-    font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Yatay kaydırmayı kaldırır */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header,
+.hero,
+.footer {
+  max-width: 100%; /* Sabit genişliği kaldırır */
+  width: 100%;
+  margin: 0 auto; /* Ortalamayı sağlar */
+}
+
+/* Header */
+.header {
+  background-color: #ffffff; /* Arka plan beyaz */
+  color: #434455;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0; /* İnce bir alt çizgi */
+  width: 1440px;
+  height: 72px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px; /* İçerik genişliği */
+  margin: 0 auto; /* Ortalamak için */
+  padding: 0 20px; /* Yanlardan boşluk */
+  margin-top: 15px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+  font-weight: 600;
+  margin-right: 0; /* Sağdaki boşluğu kaldırdık */
+}
+
+.nav-list li a {
+  font-size: 16px;
+  font-weight: 600; /* Menü yazılarını daha belirgin hale getirdim */
+}
+.nav-list li a:hover {
+  color: #3c49c0;
+}
+.header-logo {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #4d5ae5; /* "WEB" kısmının rengi */
+}
+
+.header-logo span {
+  color: #2e2f42; /* "STUDIO" kısmının rengi */
+}
+
+.contact-info {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #434455;
+}
+.contact-info a:hover {
+  color: #3c49c0;
+}
+
+/* Hero */
+.hero {
+  background-color: #2e2f42;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 0;
+  width: 100%;
+  height: 600px;
+  padding: 100px 0;
+  display: flex; /* Flexbox kullanımı */
+  flex-direction: column; /* Elemanları dikey hizala */
+  align-items: center; /* Yatayda ortalama */
+  justify-content: center; /* Dikeyde ortalama */
+}
+
+.hero h1 {
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 56px;
   line-height: 107%;
   letter-spacing: 0.02em;
   color: var(--white);
-  text-align:center;
+  text-align: center;
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  }
-  
-  .hero-button {
-    background-color: #4d5ae5;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 30px;
-    border-radius: 4px;
+}
+
+.hero-button {
+  background-color: #4d5ae5;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+  border-radius: 4px;
   padding: 16px 32px;
   width: 169px;
   height: 56px;
-  }
-  
-  .hero-button:hover {
-    background-color: #3c49c0;
-  }
-   /* Features */
-   .features-list {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 100px;
-    align-items: center; /* Yatayda ortalama */
-    justify-content: center; /* Dikeyde ortalama */
-  }
-  
-  .features-list li {
-    width: 18%;
-    font-family: var(--font-family);
+}
+
+.hero-button:hover {
+  background-color: #3c49c0;
+}
+/* Features */
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  align-items: center; /* Yatayda ortalama */
+  justify-content: center; /* Dikeyde ortalama */
+}
+
+.features-list li {
+  width: 18%;
+  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: var(--slate);
-  }
-  
-   /* Team */
-   .team {
-    text-align: center; /* Başlığı ve içeriği ortalar */
-    margin-top: 150px;
-  }
-  
-  .team-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Yatayda ortalama */
-    justify-content: center; /* Dikeyde ortalama */
-    margin-top: 50px;
-   gap: 90px;
-  }
-  .team-list li img {
-    margin-bottom: 15px; /* Resimlerin altına 15px boşluk ekler */
-    margin-top: 50px;
-  }
-  
-  .team-list li h3, .portfolio-list li p { /* Alt açıklama */
-    margin-top: 10px; /* Başlık ve alt yazı arasındaki boşluğu artırır */
-    margin-bottom: 10px;
+}
+
+/* Team */
+.team {
+  text-align: center; /* Başlığı ve içeriği ortalar */
+  margin-top: 150px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Yatayda ortalama */
+  justify-content: center; /* Dikeyde ortalama */
+  margin-top: 50px;
+  gap: 90px;
+}
+.team-list li img {
+  margin-bottom: 15px; /* Resimlerin altına 15px boşluk ekler */
+  margin-top: 50px;
+}
+
+.team-list li h3,
+.portfolio-list li p {
+  /* Alt açıklama */
+  margin-top: 10px; /* Başlık ve alt yazı arasındaki boşluğu artırır */
+  margin-bottom: 10px;
   /* Portfolio */
-  }
-  .portfolio {
-    text-align: center; /* Başlığı ortalar */
-    margin-top: 150px;
-  }
-  
-  .portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center; /* Yatayda ortalama */
-    justify-content: center; /* Dikeyde ortalama */
-    margin-left: 100px;
-    margin-top: 50px;
-  }
-  
-  .portfolio-list li {
-    width: calc(33.33% - 156px);
-    text-align: left;
-    margin: 0 5px;
-  }
-  
-  .portfolio-list li img {
-    margin-bottom: 15px; /* Resimlerin altına 15px boşluk ekler */
-    margin-top: 50px;
-  }
-  
-  .portfolio-list li h3, .portfolio-list li p { /* Alt açıklama */
-    margin-top: 10px; /* Başlık ve alt yazı arasındaki boşluğu artırır */
-    margin-bottom: 10px;
-  
-  }
-  h2{
-    font-family: var(--font-family);
+}
+.portfolio {
+  text-align: center; /* Başlığı ortalar */
+  margin-top: 150px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Yatayda ortalama */
+  justify-content: center; /* Dikeyde ortalama */
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.portfolio-list li {
+  width: calc(33.33% - 156px);
+  text-align: left;
+  margin: 0 5px;
+}
+
+.portfolio-list li img {
+  margin-bottom: 15px; /* Resimlerin altına 15px boşluk ekler */
+  margin-top: 50px;
+}
+
+.portfolio-list li h3,
+.portfolio-list li p {
+  /* Alt açıklama */
+  margin-top: 10px; /* Başlık ve alt yazı arasındaki boşluğu artırır */
+  margin-bottom: 10px;
+}
+h2 {
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 36px;
   line-height: 111%;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--navy-blue);
-  }
-  /* Footer */
-  .footer {
-    background-color: #2e2f42;
-    padding: 100px 0;
-    width: 100%;
-    margin-top: 100px;
-  }
-  
-  .footer .container {
-    max-width: 1158px; /* İçerik genişliği */
-    margin: 0 auto; /* Sayfa ortalaması */
-  }
-  
-  .footer-logo {
-    font-family: Raleway, sans-serif; /* Yazı tipi */
-    font-size: 18px; /* Yazı boyutu */
-    font-weight: 700; /* Kalın yazı */
-    line-height: 1.5; /* Satır yüksekliği */
-    color: #4d5ae5; /* Logo rengi */
-    text-decoration: none; /* Alt çizgiyi kaldır */
-    display: inline-block;
-    margin-bottom: 16px; /* Alt boşluk */
-  }
-  
-  .footer-logo span {
-    color: #f4f4fd; /* "STUDIO" kısmının rengi */
-  }
-  
-  .footer-text {
-    font-family: Roboto, sans-serif;
-    font-size: 16px; /* Yazı boyutu */
-    line-height: 1.5; /* Satır yüksekliği */
-    color: #e7e9fc; /* Metin rengi */
-    max-width: 264px; /* Metnin genişliği */
-    margin: 0; /* Varsayılan boşluğu kaldır */
-  }
+}
+/* Footer */
+.footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.footer .container {
+  max-width: 1158px; /* İçerik genişliği */
+  margin: 0 auto; /* Sayfa ortalaması */
+}
+
+.footer-logo {
+  font-family: Raleway, sans-serif; /* Yazı tipi */
+  font-size: 18px; /* Yazı boyutu */
+  font-weight: 700; /* Kalın yazı */
+  line-height: 1.5; /* Satır yüksekliği */
+  color: #4d5ae5; /* Logo rengi */
+  text-decoration: none; /* Alt çizgiyi kaldır */
+  display: inline-block;
+  margin-bottom: 16px; /* Alt boşluk */
+}
+
+.footer-logo span {
+  color: #f4f4fd; /* "STUDIO" kısmının rengi */
+}
+
+.footer-text {
+  font-family: Roboto, sans-serif;
+  font-size: 16px; /* Yazı boyutu */
+  line-height: 1.5; /* Satır yüksekliği */
+  color: #e7e9fc; /* Metin rengi */
+  max-width: 264px; /* Metnin genişliği */
+  margin: 0; /* Varsayılan boşluğu kaldır */
+}
