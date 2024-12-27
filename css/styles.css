@@ -47,10 +47,9 @@ a {
 .header {
   background-color: #ffffff; /* Arka plan beyaz */
   color: #434455;
-  padding: 10px 0;
   border-bottom: 1px solid #e7e9fc; /* İnce bir alt çizgi */
   width: 1440px;
-  height: 72px;
+  
 }
 
 .nav {
@@ -89,10 +88,9 @@ a {
 }
 
 .contact-info {
-  display: flex;
-  gap: 20px;
   font-size: 14px;
   color: #434455;
+  margin: auto 0;
 }
 .contact-info a:hover {
   color: #3c49c0;
@@ -113,7 +111,7 @@ a {
 .header .container .nav .nav-list{
   gap: 40px;
 }
-.header .container .nav .nav-list .nav_list_li{
+.header .container .nav .nav-list .nav_list_li:first-child{
   padding: 24px 0;
 }
 /* Hero */
