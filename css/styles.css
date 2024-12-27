@@ -97,14 +97,15 @@ a {
 .contact-info a:hover {
   color: #3c49c0;
 }
-.contact_ul{
+.header .container .contact-info .contact_ul{
   display: flex;
   gap: 40px;
 }
 .header .container{
   display: flex;
   width: 1158px;
-  padding: 0 15px
+  padding: 0 15px;
+  margin: 0 auto;
 }
 .header .container .nav .header-logo {
   margin-right: 76px
