@@ -109,7 +109,7 @@ a {
 .header .container .nav .nav_list {
   gap: 40px;
 }
-.header .container .nav .nav_list .nav_list_li {
+.header .container .nav .nav_list .nav_li {
   padding: 24px 0;
 }
 /* Hero */
