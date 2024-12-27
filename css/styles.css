@@ -58,7 +58,6 @@ a {
   max-width: 1440px; /* İçerik genişliği */
   margin: 0 auto; /* Ortalamak için */
   padding: 0 20px; /* Yanlardan boşluk */
-  margin-top: 15px;
 }
 
 .nav_list {
