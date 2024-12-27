@@ -48,7 +48,7 @@ a {
   background-color: #ffffff; /* Arka plan beyaz */
   color: #434455;
   padding: 10px 0;
-  border-bottom: 1px solid #e0e0e0; /* İnce bir alt çizgi */
+  border-bottom: 1px solid #e7e9fc; /* İnce bir alt çizgi */
   width: 1440px;
   height: 72px;
 }
@@ -97,7 +97,24 @@ a {
 .contact-info a:hover {
   color: #3c49c0;
 }
-
+.contact_ul{
+  display: flex;
+  gap: 40px;
+}
+.header .container{
+  display: flex;
+  width: 1158px;
+  padding: 0 15px
+}
+.header .container .nav .header-logo {
+  margin-right: 76px
+}
+.header .container .nav .nav-list{
+  gap: 40px;
+}
+.header .container .nav .nav-list .nav_list_li{
+  padding: 24px 0;
+}
 /* Hero */
 .hero {
   background-color: #2e2f42;
