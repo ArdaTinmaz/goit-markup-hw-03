@@ -49,7 +49,6 @@ a {
   color: #434455;
   border-bottom: 1px solid #e7e9fc; /* İnce bir alt çizgi */
   width: 1440px;
-  
 }
 
 .nav {
@@ -62,18 +61,18 @@ a {
   margin-top: 15px;
 }
 
-.nav-list {
+.nav_list {
   display: flex;
   gap: 30px;
   font-weight: 600;
   margin-right: 0; /* Sağdaki boşluğu kaldırdık */
 }
 
-.nav-list li a {
+.nav_list li a {
   font-size: 16px;
   font-weight: 600; /* Menü yazılarını daha belirgin hale getirdim */
 }
-.nav-list li a:hover {
+.nav_list li a:hover {
   color: #3c49c0;
 }
 .header-logo {
@@ -95,23 +94,23 @@ a {
 .contact-info a:hover {
   color: #3c49c0;
 }
-.header .container .contact-info .contact_ul{
+.header .container .contact-info .contact_ul {
   display: flex;
   gap: 40px;
 }
-.header .container{
+.header .container {
   display: flex;
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
 .header .container .nav .header-logo {
-  margin-right: 76px
+  margin-right: 76px;
 }
-.header .container .nav .nav-list{
+.header .container .nav .nav_list {
   gap: 40px;
 }
-.header .container .nav .nav-list .nav_list_li{
+.header .container .nav .nav_list .nav_list_li {
   padding: 24px 0;
 }
 /* Hero */
