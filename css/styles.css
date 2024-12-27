@@ -111,7 +111,7 @@ a {
 .header .container .nav .nav-list{
   gap: 40px;
 }
-.header .container .nav .nav-list .nav_list_li:first-child{
+.header .container .nav .nav-list .nav_list_li{
   padding: 24px 0;
 }
 /* Hero */
